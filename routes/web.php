@@ -8,8 +8,12 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('profile', ['title' => 'Home Page']);
+    return view('welcome');
 });
+
+// Route::get('/', function () {
+//     return view('profile', ['title' => 'Home Page']);
+// });
 
 Route::get('/project-1', function () {
     return view('project-1');
