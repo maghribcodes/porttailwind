@@ -6,14 +6,14 @@
     },
     "routes": [
         {
-            "src": "/(assets)/(.*)",
+            "src": "/(assets)/(css|fonts|img|js)(.*)",
             "dest": "public/$1/$2"
         },
         {
         "src": "/(.*)",
         "dest": "/api/index.php"
-    }
-],
+        }
+    ],
     "env": {
         "APP_NAME": "Portfolio",
         "APP_ENV": "production",
